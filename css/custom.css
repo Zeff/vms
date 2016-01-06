@@ -14,3 +14,18 @@ ul.navbar-right>li {
   min-width: 100%;
   height: 500px;
 }
+
+.goudy {
+	font-family: 'Sorts Mill Goudy', serif;
+	text-shadow: 	0px -4px 10px rgba(0,0,0,0.5),
+								0px 4px 10px rgba(0,0,0,0.5),
+								0px 0px 23px rgba(0,0,0,0.2);
+	/*font-weight: 700;*/
+	font-size: 5em;
+}
+
+.carousel-caption {
+	text-shadow: 	0px -4px 10px rgba(0,0,0,0.3),
+								0px 4px 10px rgba(0,0,0,0.3),
+								0px 0px 20px rgba(0,0,0,0.1);
+}
