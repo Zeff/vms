@@ -1,0 +1,15 @@
+.navbar-brand {
+	font-family: 'Sorts Mill Goudy', serif;
+}
+
+ul.navbar-right>li {
+	margin-right: 10px;
+}
+
+.li-separator {
+	padding-left: 1em;
+}
+
+.carousel-inner {
+	height: 500px;
+}
