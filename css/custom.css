@@ -1,6 +1,28 @@
+/***************** General edits for layout *****************/
+
 body {
-	margin-top: 75px;
+	padding-top: 75px;
+	background-color: #f8f8f8;
 }
+
+.spacer1 {
+	margin-bottom: 1%;
+}
+
+.spacer2 {
+	margin-bottom: 2%;
+}
+
+.spacer3 {
+	margin-bottom: 3%;
+}
+
+.carousel img {
+  min-width: 100%;
+  min-height: 100%;
+}
+
+/***************** Navbar-related *******************/
 
 .navbar {
 	min-height: 125px;
@@ -24,17 +46,22 @@ ul.navbar-right>li {
 	padding-left: 1em;
 }
 
-.carousel img {
-  min-width: 100%;
-  min-height: 100%;
-}
+/****************** Text styles ******************/
 
 .goudy {
 	font-family: 'Sorts Mill Goudy', serif;
 }
 
+.heavy {
+	font-weight: 600;
+}
+
 .five-em {
 	font-size: 5em;
+}
+
+.f40 {
+	font-size: 40px;
 }
 
 .shadow {
@@ -51,4 +78,215 @@ ul.navbar-right>li {
 
 .center {
 	text-align: center;
+}
+
+/******************* Button styles *********************/
+.btn-circle {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  /*padding: 6px 0;*/
+  font-size: 12px;
+  line-height: 1.428571429;
+  border-radius: 15px;
+}
+.btn-circle.btn-lg {
+  width: 50px;
+  height: 50px;
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.33;
+  border-radius: 25px;
+}
+.btn-circle.btn-xl {
+  width: 200px;
+  height: 200px;
+  padding-top: 30px;
+  font-size: 28px;
+  line-height: 1.33;
+  border-radius: 100px;
+}
+
+.btn-about {
+	margin-top: -10px;
+}
+
+.btn-adm {
+	margin-top: 8px;
+	margin-left: 6px;
+}
+
+.btn-gold {
+  color: #fff;
+  background-color: #FFA600;
+  border-color: #FFA600;
+}
+.btn-gold:focus,
+.btn-gold.focus {
+  color: #fff;
+  background-color: #FFC000;
+  border-color: #FFA600;
+}
+.btn-gold:hover {
+  color: #fff;
+  /*background-color: #ec971f;*/
+  background-color: #FFC000;
+  border-color: #FFA600;
+}
+.btn-gold:active,
+.btn-gold.active,
+.open > .dropdown-toggle.btn-gold {
+  color: #fff;
+  background-color: #ec971f;
+  border-color: #d58512;
+}
+.btn-gold:active:hover,
+.btn-gold.active:hover,
+.open > .dropdown-toggle.btn-gold:hover,
+.btn-gold:active:focus,
+.btn-gold.active:focus,
+.open > .dropdown-toggle.btn-gold:focus,
+.btn-gold:active.focus,
+.btn-gold.active.focus,
+.open > .dropdown-toggle.btn-gold.focus {
+  color: #fff;
+  background-color: #d58512;
+  border-color: #985f0d;
+}
+.btn-gold:active,
+.btn-gold.active,
+.open > .dropdown-toggle.btn-gold {
+  background-image: none;
+}
+.btn-gold.disabled:hover,
+.btn-gold[disabled]:hover,
+fieldset[disabled] .btn-gold:hover,
+.btn-gold.disabled:focus,
+.btn-gold[disabled]:focus,
+fieldset[disabled] .btn-gold:focus,
+.btn-gold.disabled.focus,
+.btn-gold[disabled].focus,
+fieldset[disabled] .btn-gold.focus {
+  background-color: #f0ad4e;
+  border-color: #eea236;
+}
+.btn-gold .badge {
+  color: #f0ad4e;
+  background-color: #fff;
+}
+
+.btn-maroon {
+  color: #fff;
+  background-color: #880011;
+  border-color: #880011;
+}
+.btn-maroon:focus,
+.btn-maroon.focus {
+  color: #fff;
+  background-color: #bb0011;
+  border-color: #880011;
+}
+.btn-maroon:hover {
+  color: #fff;
+  background-color: #bb0011;
+  border-color: #880011;
+}
+.btn-maroon:active,
+.btn-maroon.active,
+.open > .dropdown-toggle.btn-maroon {
+  color: #fff;
+  background-color: #ec971f;
+  border-color: #d58512;
+}
+.btn-maroon:active:hover,
+.btn-maroon.active:hover,
+.open > .dropdown-toggle.btn-maroon:hover,
+.btn-maroon:active:focus,
+.btn-maroon.active:focus,
+.open > .dropdown-toggle.btn-maroon:focus,
+.btn-maroon:active.focus,
+.btn-maroon.active.focus,
+.open > .dropdown-toggle.btn-maroon.focus {
+  color: #fff;
+  background-color: #d58512;
+  border-color: #985f0d;
+}
+.btn-maroon:active,
+.btn-maroon.active,
+.open > .dropdown-toggle.btn-maroon {
+  background-image: none;
+}
+.btn-maroon.disabled:hover,
+.btn-maroon[disabled]:hover,
+fieldset[disabled] .btn-maroon:hover,
+.btn-maroon.disabled:focus,
+.btn-maroon[disabled]:focus,
+fieldset[disabled] .btn-maroon:focus,
+.btn-maroon.disabled.focus,
+.btn-maroon[disabled].focus,
+fieldset[disabled] .btn-maroon.focus {
+  background-color: #f0ad4e;
+  border-color: #eea236;
+}
+.btn-maroon .badge {
+  color: #f0ad4e;
+  background-color: #fff;
+}
+
+.btn-gray {
+  color: #333;
+  background-color: #ddd;
+  border-color: #ddd;
+}
+.btn-gray:focus,
+.btn-gray.focus {
+  color: #333;
+  background-color: #eee;
+  border-color: #ddd;
+}
+.btn-gray:hover {
+  color: #333;
+  background-color: #eee;
+  border-color: #ddd;
+}
+.btn-gray:active,
+.btn-gray.active,
+.open > .dropdown-toggle.btn-gray {
+  color: #333;
+  background-color: #eee;
+  border-color: #ccc;
+}
+.btn-gray:active:hover,
+.btn-gray.active:hover,
+.open > .dropdown-toggle.btn-gray:hover,
+.btn-gray:active:focus,
+.btn-gray.active:focus,
+.open > .dropdown-toggle.btn-gray:focus,
+.btn-gray:active.focus,
+.btn-gray.active.focus,
+.open > .dropdown-toggle.btn-gray.focus {
+  color: #333;
+  background-color: #d4d4d4;
+  border-color: #8c8c8c;
+}
+.btn-gray:active,
+.btn-gray.active,
+.open > .dropdown-toggle.btn-gray {
+  background-image: none;
+}
+.btn-gray.disabled:hover,
+.btn-gray[disabled]:hover,
+fieldset[disabled] .btn-gray:hover,
+.btn-gray.disabled:focus,
+.btn-gray[disabled]:focus,
+fieldset[disabled] .btn-gray:focus,
+.btn-gray.disabled.focus,
+.btn-gray[disabled].focus,
+fieldset[disabled] .btn-gray.focus {
+  background-color: #fff;
+  border-color: #ccc;
+}
+.btn-gray .badge {
+  color: #fff;
+  background-color: #333;
 }
