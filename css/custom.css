@@ -52,6 +52,10 @@ ul.navbar-right>li {
 	font-family: 'Sorts Mill Goudy', serif;
 }
 
+.fnt-white {
+	color: #fff;
+}
+
 .heavy {
 	font-weight: 600;
 }
@@ -289,4 +293,9 @@ fieldset[disabled] .btn-gray.focus {
 .btn-gray .badge {
   color: #fff;
   background-color: #333;
+}
+
+/***************** Generic Color Styles *********************/
+.maroon {
+	background-color: #880011;
 }
