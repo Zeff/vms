@@ -1,7 +1,7 @@
 /***************** General edits for layout *****************/
 
 body {
-	padding-top: 75px;
+	padding-top: 125px;
 	background-color: #f8f8f8;
 }
 
@@ -17,11 +17,14 @@ body {
 	margin-bottom: 3%;
 }
 
-.carousel img {
-  min-width: 100%;
-  min-height: 100%;
+.spacer4 {
+  margin-bottom: 4%;
 }
 
+.pad-5 {
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
 /***************** Navbar-related *******************/
 
 .navbar {
@@ -46,6 +49,19 @@ ul.navbar-right>li {
 	padding-left: 1em;
 }
 
+/****************** Carousel styles ******************/
+
+.carousel img {
+  height: 100%;
+  min-height: 490px;
+}
+
+.carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img {
+    max-width: 9999px;
+    margin: 0 auto;
+    text-align: center;
+}
+
 /****************** Text styles ******************/
 
 .goudy {
@@ -60,12 +76,24 @@ ul.navbar-right>li {
 	font-weight: 600;
 }
 
+.two-em {
+  font-size: 2em;
+}
+
+.three-em {
+  font-size: 3em;
+}
+
 .five-em {
 	font-size: 5em;
 }
 
 .f40 {
 	font-size: 40px;
+}
+
+.indent {
+  text-indent: 1em;
 }
 
 .shadow {
@@ -298,4 +326,8 @@ fieldset[disabled] .btn-gray.focus {
 /***************** Generic Color Styles *********************/
 .maroon {
 	background-color: #880011;
+}
+
+.gold {
+  background-color: #FFA600;
 }
