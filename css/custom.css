@@ -80,8 +80,8 @@ ul.navbar-right>li {
 /****************** Carousel styles ******************/
 
 .carousel img {
-  height: 100%;
-  min-height: 490px;
+  width: 100%;
+  /*min-height: 490px;*/
 }
 
 .carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img {
@@ -94,6 +94,10 @@ ul.navbar-right>li {
 
 .goudy {
 	font-family: 'Sorts Mill Goudy', serif;
+}
+
+.allura {
+  font-family: 'Allura', cursive;
 }
 
 .fnt-white {
@@ -365,5 +369,25 @@ fieldset[disabled] .btn-gray.focus {
 }
 
 .gray-footer {
-  background-color: #666;
+  background-color: #444;
+}
+
+.white {
+  background-color: #fff;
+}
+
+.lnk-wht {
+  color: #fff;
+}
+
+.lnk-wht:hover {
+  color: #fff;
+}
+
+.lnk-wht-f {
+  color: #fff;
+}
+
+.lnk-wht-f:hover {
+  color: #3b5998;
 }
