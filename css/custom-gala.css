@@ -75,6 +75,17 @@ body {
   padding-bottom: 5px;
   padding-top: 5px;
 }
+
+.col-sm-8.gala-head {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.col-sm-12.gala-head {
+  padding-left: 0;
+  padding-right: 0;
+}
+
 /***************** Navbar-related *******************/
 
 .navbar {
@@ -127,6 +138,10 @@ ul.navbar-right>li {
 
 .heavy {
 	font-weight: 600;
+}
+
+.underline {
+  text-decoration: underline;
 }
 
 .one-em {
@@ -400,6 +415,11 @@ fieldset[disabled] .btn-gray.focus {
 
 .gala-head {
   background-color: #e7e6a2;
+}
+
+.gala-item-detail {
+  background-color: #e7e6a2;
+  border-bottom: 4px solid #333;
 }
 
 .gala-details {
