@@ -71,6 +71,10 @@ body {
   padding-bottom: 2em;
 }
 
+.pad-left-4em {
+  padding-left: 4em;
+}
+
 .pad-5 {
   padding-bottom: 5px;
   padding-top: 5px;
