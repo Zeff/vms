@@ -83,11 +83,16 @@ body {
 .col-sm-8.gala-head {
   padding-left: 0;
   padding-right: 0;
+  max-width: 950px;
 }
 
 .col-sm-12.gala-head {
   padding-left: 0;
   padding-right: 0;
+}
+
+.col-sm-8.max950 {
+  max-width: 950px;
 }
 
 /***************** Navbar-related *******************/
@@ -423,7 +428,7 @@ fieldset[disabled] .btn-gray.focus {
 
 .gala-item-detail {
   background-color: #e7e6a2;
-  border-bottom: 4px solid #333;
+  border-bottom: 4px solid #111;
 }
 
 .gala-details {
