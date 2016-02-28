@@ -95,6 +95,10 @@ body {
   max-width: 950px;
 }
 
+.center-showcase {
+  margin: 0 auto;
+}
+
 /***************** Navbar-related *******************/
 
 .navbar {

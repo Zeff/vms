@@ -57,7 +57,17 @@ body {
   padding-bottom: 5px;
   padding-top: 5px;
 }
-/***************** Navbar-related *******************/
+
+.center-showcase {
+  margin: 0 auto;
+}
+
+.max950 {
+  max-width: 950px;
+}
+/************************************************************ Navbar-related *******************/
+
+
 
 .navbar {
 	min-height: 125px;
@@ -379,7 +389,10 @@ fieldset[disabled] .btn-gray.focus {
   background-color: #333;
 }
 
-/***************** Generic Color Styles *********************/
+
+/**************************************************** Generic Color Styles *********************/
+
+
 .maroon {
 	background-color: #880011;
 }
@@ -410,4 +423,20 @@ fieldset[disabled] .btn-gray.focus {
 
 .lnk-wht-f:hover {
   color: #3b5998;
+}
+
+/**************************************************** Image Styles *********************/
+.img-inline-md {
+  width: 40%;
+  margin: 1% 2% 1% 0;
+}
+
+.img-inline-sm {
+  width: 15%;
+  margin: 1% 2% 1% 0;
+}
+
+.img-inline-center {
+  width: 80%;
+  margin: 2% auto;
 }
