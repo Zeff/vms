@@ -84,9 +84,24 @@ a.navbar-brand {
 	margin-top: -15px;
 }
 
+.navbar-default .navbar-nav > li > a:hover {
+    color: #333;
+    background-color: transparent;
+    border-bottom: 5px solid #FFA600;
+}
+
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
 	background-color: transparent;
 	border-bottom: 5px solid #880011;
+}
+
+ul.dropdown-menu>li>a:hover {
+  background-color: #ccc;
+}
+
+ul.dropdown-menu>li.li-separator>a {
+  /*padding-left: 0;*/
+  margin-left: -14px;
 }
 
 ul.navbar-right>li {
