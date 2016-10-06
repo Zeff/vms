@@ -1,0 +1,35 @@
+/***************** General edits for layout *****************/
+
+body {
+  padding-top: 100px;
+  background: white;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.race-main {
+  background-color: #660022;
+  padding: 50px 25px;
+}
+
+/****************** Text styles ******************/
+@font-face {
+    font-family: "race";
+    src: url(../fonts/LondonTwo.ttf) format("truetype");
+}
+
+.racefont {
+    font-family: "race", Verdana, Tahoma;
+}
+
+.base-em {
+  font-size: 1.2em;
+}
+/***************** Image Styles *********************/
+.img-responsive {
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
