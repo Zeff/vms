@@ -153,6 +153,10 @@ ul.navbar-right>li {
   font-size: 18px;
 }
 
+.one-em {
+	font-size: 1.5em;
+}
+
 .two-em {
   font-size: 2em;
 }
@@ -431,7 +435,7 @@ fieldset[disabled] .btn-gray.focus {
 }
 
 .gray {
-  background-color: #111;
+  background-color: #444;
 }
 
 .gray-footer {
