@@ -462,6 +462,11 @@ fieldset[disabled] .btn-gray.focus {
   color: #3b5998;
 }
 
+a.list-group-item:hover {
+	background-color: #FFA600;
+	color: #fff;
+}
+
 /**************************************************** Image Styles *********************/
 .img-inline-md {
   width: 40%;
