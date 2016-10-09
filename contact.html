@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Versailles Montessori School - Contact</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-	<link href='https://fonts.googleapis.com/css?family=Allura|Sorts+Mill+Goudy' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Sorts+Mill+Goudy' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/custom.css">
 </head>
@@ -66,8 +66,7 @@
     </div><!-- /.container-fluid -->
   </nav>
 
-  <!-- Our Story -->
-  <div class="container-fluid">
+  <div class="container-fluid full-width">
 
 		<!-- Section Header -->
     <div class="row">
@@ -76,40 +75,16 @@
       </div>
     </div>
 
-    <div class="spacer3"></div>
-
-    <div class="sp-top-3em hidden-xs"></div>
-    <div class="row">
-      <div class="col-sm-2"></div>
-      <div class="col-sm-8">
-        <div class="center-showcase max950">
-          <div class="row">
-            <div class="col-sm-12">
-              <p class="showcase-em">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-sm-12">
-              <img src="images/paolini.jpg" alt="" class="pull-left img-inline-sm">
-              <p class="showcase-em">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-sm-12">
-              <img src="images/schoolhouse.jpg" alt="The original school house on Berry Avenue." class="img-inline-md pull-right">
-              <p class="showcase-em">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-sm-12">
-              <p class="showcase-em">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-              <img src="images/current-schoolhouse.jpg" alt="" class="center-block img-inline-center">
-
-            </div>
-          </div>
-        </div>
+    <div class="row no-gutters">
+			<!-- Contact info -->
+      <div class="col-sm-3">
+      	Contact info here
       </div>
-      <div class="col-sm-2"></div>
+
+			<!-- Map -->
+      <div class="col-sm-9">
+      	<div id="map" style="min-height:600px"></div>
+      </div>
     </div>
   </div>
     <div class="spacer3"></div>
@@ -172,6 +147,17 @@
 
   <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDX6YAeMRZK8HtC0zjwq5gunxA2_EjMp4&callback=initMap" async defer></script>
+	<script>
+		function initMap() {
+			// Create a map object and specify the DOM element for display.
+			var map = new google.maps.Map(document.getElementById('map'), {
+				center: {lat: 38.005651, lng: -84.714177},
+				scrollwheel: false,
+				zoom: 11
+			});
+		}
+	</script>
 
 </body>
 </html>
