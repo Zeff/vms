@@ -83,6 +83,9 @@ body {
   max-width: 950px;
 }
 
+#map {
+	min-height: 800px;
+}
 
 /************************************************************ Navbar-related *******************/
 
@@ -241,7 +244,7 @@ ul.no-bullet {
 }
 
 li.egg {
-	background: url('/images/egg.png') no-repeat left center;
+	background: url('../images/egg.png') no-repeat left center;
 	min-height: 100px;
 	padding-left: 85px;
 	padding-top: 10px;
