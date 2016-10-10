@@ -78,12 +78,47 @@
     <div class="row no-gutters">
 			<!-- Contact info -->
       <div class="col-sm-3">
-      	Contact info here
-      </div>
-
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<div class="panel-title">
+							<h3 class="goudy">
+								<strong>We invite you to visit VMS and see Montessori at work.</strong>
+							</h3>
+						</div>
+					</div>
+					<div class="panel-body showcase-em">
+						<p>To schedule a visit:</p>
+						<div>Phone: 859-873-1998</div>
+						<!-- <p>or</p> -->
+						<div>Email: <a href="mailto:info@versaillesmontessori.org">info@versaillesmontessori.org</a></div>
+					</div>
+      	</div>
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<div class="panel-title">
+							<h3 class="goudy"><strong>Hours of Operation</strong></h2>
+						</div>
+					</div>
+					<div class="panel-body showcase-em">
+						<p>Monday - Friday</p>
+						<p>7:30 AM - 5:30 PM</p>
+						<em>See calendar for school closings.</em>
+					</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<div class="panel-title">
+							<h3 class="goudy"><strong>Location</strong></h2>
+						</div>
+					</div>
+					<div class="panel-body showcase-em">
+						<p>VMS is located in the heart of the Bluegrass. Minutes off the BlueGrass Parkway, VMS is conveniently located between Frankfort, Lawrenceburg, Lexington, Versailles and other nearby cities. Its 10 acre rural campus makes available small farm animals, organic gardens, a full size greenhouse, wildlife observations, and much more!</p>
+					</div>
+				</div>
+			</div>
 			<!-- Map -->
       <div class="col-sm-9">
-      	<div id="map" style="min-height:600px"></div>
+      	<div id="map" style="min-height:800px"></div>
       </div>
     </div>
   </div>
@@ -150,14 +185,49 @@
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDX6YAeMRZK8HtC0zjwq5gunxA2_EjMp4&callback=initMap" async defer></script>
 	<script>
 		function initMap() {
-			// Create a map object and specify the DOM element for display.
-			var map = new google.maps.Map(document.getElementById('map'), {
-				center: {lat: 38.005651, lng: -84.714177},
-				scrollwheel: false,
-				zoom: 11
-			});
+			var mapOptions = {
+					zoom: 11,
+					center: new google.maps.LatLng(38.005651, -84.714177),
+					styles: [{"featureType":"road","elementType":"geometry","stylers":[{"lightness":100},{"visibility":"simplified"}]},{"featureType":"water","elementType":"geometry","stylers":[{"visibility":"on"},{"color":"#C6E2FF"}]},{"featureType":"poi","elementType":"geometry.fill","stylers":[{"color":"#C5E3BF"}]},{"featureType":"road","elementType":"geometry.fill","stylers":[{"color":"#D1D1B8"}]}]
+			};
+			var map = new google.maps.Map(document.getElementById('map'), mapOptions);
+
+			var marker = new google.maps.Marker({
+        position: mapOptions.center,
+        map: map,
+				icon: 'http://maps.google.com/mapfiles/ms/icons/yellow-dot.png'
+      });
+
+			var contentString = '<div id="content">'+
+		      '<div id="siteNotice">'+
+		      '</div>'+
+		      '<h2 id="firstHeading" class="firstHeading">Versailles Montessori School</h1>'+
+		      '<div id="bodyContent">'+
+		      '<p>480 Pinckard Pk, Versailles KY 40383</p>' +
+					'<p>Phone: 859-873-1998</p>' +
+					'<p>Email: <a href="mailto:info@versaillesmontessori.org">info@versaillesmontessori.org</a></p>' +
+					'<h3><a target="_blank" href="https://www.google.com/maps/dir//Versailles+montessori+school,+480+Pinckard+Pike,+Versailles,+KY+40383/@38.0500081,-84.8515162,11.19z/data=!4m16!1m7!3m6!1s0x884265bec012e0dd:0xe580b16b73882071!2sVersailles+montessori+school!3b1!8m2!3d38.0040257!4d-84.7143129!4m7!1m0!1m5!1m1!1s0x884265bec012e0dd:0xe580b16b73882071!2m2!1d-84.7143129!2d38.0040257">Get directions</a></h3>' +
+		      '</div>'+
+		      '</div>';
+
+		  var infowindow = new google.maps.InfoWindow({
+		    content: contentString
+		  });
+
+		  marker.addListener('click', function() {
+		    infowindow.open(map, marker);
+		  });
+
 		}
 	</script>
 
 </body>
 </html>
+
+<!--
+var map = new google.maps.Map(document.getElementById('map'), {
+	center: {lat: 38.005651, lng: -84.714177},
+	zoom: 11
+});
+
+-->
