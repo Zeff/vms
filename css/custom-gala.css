@@ -2,21 +2,88 @@
 
 body {
   padding-top: 125px;
+  background-color: #f5eddb;
   /*width: 940px;*/
   /*margin: 0 auto;*/
-  background: url("../images/red-carpet.jpg") no-repeat center center fixed;
+  /*background: url("../images/red-carpet.jpg") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;
+    background-size: cover;*/
 }
 
-.col-sm-8.gala-head {
+.gala-head {
   padding-left: 0;
   padding-right: 0;
 }
 
-/****************** Text styles ******************/
+.row.match-cols {
+    overflow: hidden;
+}
 
+.row.match-cols [class*="col-"]{
+    margin-bottom: -99999px;
+    padding-bottom: 99999px;
+}
+
+p.stack {
+  margin: 0;
+}
+
+.gala-list {
+  padding-left: 1em;
+  min-height: 590px;
+}
+/****************** Text styles ******************/
+@font-face {
+  font-family: 'DK Fledermaus';
+  src: url('../fonts/fledermaus.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'StandingRoomOnly';
+  src: url('../fonts/StandingRoomOnlyNF.ttf') format('truetype');
+}
+
+.fledermaus {
+  font-family: 'DK Fledermaus', serif;
+}
+
+.standingroom {
+  font-family: 'StandingRoomOnly', serif;
+}
 
 /***************** Generic Color Styles *********************/
+.speakeasy-rose {
+  color: #F4D9BC;
+}
+
+.speakeasy-pink {
+  color: #F5EDDB;
+}
+
+.speakeasy-gray {
+  color: #333332;
+}
+
+.speakeasy-gray-bk {
+  background-color: #333332;
+}
+
+.speakeasy-rose-bk {
+  background-color: #F4D9BC;
+}
+
+/***************** Image Styles *********************/
+.img-inline-max {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+hr.speakeasy {
+    border: 0;
+    height: 1px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-image: linear-gradient(to right, rgba(244, 217, 188, 0), rgba(244, 217, 188, 0.75), rgba(244, 217, 188, 0));
+}
