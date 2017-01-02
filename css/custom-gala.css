@@ -31,9 +31,13 @@ p.stack {
 }
 
 .gala-list {
-  padding-left: 1em;
-  min-height: 590px;
+  padding: 0 1em;
 }
+
+.hr-pull {
+  margin-top: -25px;
+}
+
 /****************** Text styles ******************/
 @font-face {
   font-family: 'DK Fledermaus';
@@ -80,10 +84,50 @@ p.stack {
   max-height: 100%;
 }
 
-hr.speakeasy {
+hr.speakeasy-light {
     border: 0;
     height: 1px;
     margin-top: 5px;
     margin-bottom: 5px;
     background-image: linear-gradient(to right, rgba(244, 217, 188, 0), rgba(244, 217, 188, 0.75), rgba(244, 217, 188, 0));
+}
+
+hr.speakeasy-dark {
+    border: 0;
+    height: 1px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-image: linear-gradient(to right, rgba(51, 51, 50, 0), rgba(51, 51, 50, 0.75), rgba(51, 51, 50, 0));
+}
+/* Flaired edges, by Tomas Theunissen */
+
+hr.flaired {
+    height: 20px;
+    border-style: solid;
+    border-color: #333332;
+    border-width: 1px 0 0 0;
+    border-radius: 20px;
+    margin-right: 1em;
+    margin-left: 1em;
+}
+hr.flaired:before { /* Not really supposed to work, but does */
+    display: block;
+    content: "";
+    height: 20px;
+    margin-top: -17px;
+    border-style: solid;
+    border-color: #333332;
+    border-width: 0 0 1px 0;
+    border-radius: 20px;
+}
+
+hr {
+  margin-bottom: 0;
+}
+
+button {
+  margin-top: 6px;
+  padding-top: 5px;
+  background-color: #333332;
+  color: #F4D9BC;
 }
