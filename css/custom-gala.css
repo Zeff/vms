@@ -131,3 +131,7 @@ button {
   background-color: #333332;
   color: #F4D9BC;
 }
+
+#sponsors .img-responsive {
+  max-width: 100%;
+}
