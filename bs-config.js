@@ -11,6 +11,10 @@
  | set internally. See the website for more info.
  |
  |
+ | Usage:
+ |
+ | browser-sync start -c bs-config.js
+ |
  */
 module.exports = {
     "ui": false,
