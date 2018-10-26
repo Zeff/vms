@@ -1,7 +1,7 @@
 /***************** General edits for layout *****************/
 
 body {
-  padding-top: 100px;
+  padding-top: 70px;
   background: white;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -10,7 +10,6 @@ body {
 }
 
 .race-main {
-  background-color: #660022;
   padding: 50px 25px;
 }
 
